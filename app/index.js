@@ -24,7 +24,7 @@ EStyleSheet.build({
 
   $border: '#979797',
   $inputText: '#797979',
-  $outline: 1,
+  // $outline: 1,
 });
 
 // export default () => <Home />;
