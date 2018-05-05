@@ -27,7 +27,7 @@ class IconButton extends Component {
         filename = require('./images/convert.png');
         break;
 
-      case 'price':
+      case 'prices':
         filename = require('./images/prices.png');
         break;
 
@@ -41,7 +41,7 @@ class IconButton extends Component {
     }
 
     return (
-      <TouchableOpacity style={styles.container} onPress={this.handleButtonPress}>
+      <TouchableOpacity style={styles.container} onPress={this.props.onPress}>
         <View style={styles.wrapper}>
           <Image resizeMode="contain" style={styles.icon} source={filename} />
           {/* <Icon name="cycle" size={35} /> */}
@@ -55,7 +55,7 @@ class IconButton extends Component {
 IconButton.propTypes = {
   iconName: PropTypes.string,
   text: PropTypes.string,
-  // onPress: PropTypes.func,
+  onPress: PropTypes.func,
 };
 
 export default IconButton;

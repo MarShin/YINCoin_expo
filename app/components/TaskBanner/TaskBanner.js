@@ -7,8 +7,8 @@ import styles from './styles';
 
 class TaskBanner extends Component {
   handlePrices = () => {
-    console.log('press Prssices button');
-    // this.props.navigation.navigate('Prices');
+    console.log('press prices button');
+    this.props.navigation.navigate('Prices');
   };
 
   handleSendMoney = () => {
