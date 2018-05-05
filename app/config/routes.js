@@ -3,7 +3,7 @@ import { TabNavigator, StackNavigator } from 'react-navigation';
 import { Icon } from 'react-native-elements';
 
 import Home from '../screens/Home';
-// import Prices from '../screens/Prices';
+import Prices from '../screens/Prices';
 
 import Settings from '../screens/Settings';
 import Me from '../screens/Me';
@@ -15,13 +15,13 @@ export const HomeStack = StackNavigator({
       header: () => null, // specifies no object return for header, default white space
     },
   },
-  // Prices: {
-  //     screen: Prices,
-  //     navigationOptions: ({ navigation }) => ({
-  //         // navigation object automatically attached to screen
-  //         headerTitle: 'Prices',
-  //     }),
-  // },
+  Prices: {
+    screen: Prices,
+    navigationOptions: ({ navigation }) => ({
+      // navigation object automatically attached to screen
+      headerTitle: 'Prices',
+    }),
+  },
 });
 
 export const Tabs = TabNavigator({

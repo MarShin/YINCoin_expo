@@ -17,9 +17,6 @@ class IconButton extends Component {
   };
 
   render() {
-    // const temp = this.props.iconName;
-    // const name = `./images/${{ temp }}.png`;
-
     let filename = null;
     switch (this.props.iconName) {
       default:
@@ -31,7 +28,7 @@ class IconButton extends Component {
         break;
 
       case 'price':
-        filename = require('./images/price.png');
+        filename = require('./images/prices.png');
         break;
 
       case 'receive_money':
