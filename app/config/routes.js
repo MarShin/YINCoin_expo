@@ -19,7 +19,7 @@ export const HomeStack = StackNavigator({
     screen: Prices,
     navigationOptions: ({ navigation }) => ({
       // navigation object automatically attached to screen
-      headerTitle: 'Prices',
+      headerTitle: '價格',
     }),
   },
 });
@@ -28,14 +28,14 @@ export const Tabs = TabNavigator({
   Feed: {
     screen: HomeStack,
     navigationOptions: {
-      tabBarLabel: 'Home',
+      tabBarLabel: '首頁',
       tabBarIcon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />,
     },
   },
   Me: {
     screen: Me,
     navigationOptions: {
-      tabBarLabel: 'Me',
+      tabBarLabel: '我的',
       tabBarIcon: ({ tintColor }) => <Icon name="account-circle" size={35} color={tintColor} />,
     },
   },
@@ -45,7 +45,7 @@ export const SettingsStack = StackNavigator({
   Settings: {
     screen: Settings,
     navigationOptions: {
-      title: 'Settings',
+      title: '設定',
     },
   },
 });
