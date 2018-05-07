@@ -4,6 +4,7 @@ import { Icon } from 'react-native-elements';
 
 import Home from '../screens/Home';
 import Prices from '../screens/Prices';
+import CryptoViz from '../screens/CryptoViz';
 
 import Settings from '../screens/Settings';
 import Me from '../screens/Me';
@@ -16,7 +17,8 @@ export const HomeStack = StackNavigator({
     },
   },
   Prices: {
-    screen: Prices,
+    // screen: Prices,
+    screen: CryptoViz,
     navigationOptions: ({ navigation }) => ({
       // navigation object automatically attached to screen
       headerTitle: '價格',

@@ -1,8 +1,11 @@
 import React from 'react';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
-// import Home from "./screens/Home";
+import { Provider } from 'react-redux';
+import store from './config/store';
 import { Root } from './config/routes';
+
+// import Home from "./screens/Home";
 
 EStyleSheet.build({
   $darkBlue: '#142026',
@@ -28,4 +31,10 @@ EStyleSheet.build({
 });
 
 // export default () => <Home />;
-export default () => <Root />;
+// export default () => <Root />;
+
+export default () => (
+  <Provider store={store}>
+    <Root />
+  </Provider>
+);
