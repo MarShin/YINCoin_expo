@@ -20,7 +20,7 @@ class CardContainer extends Component {
   }
 
   componentDidMount() {
-    this.makeRemoteRequest();
+    // this.makeRemoteRequest();
   }
 
   makeRemoteRequest = () => {
@@ -67,7 +67,22 @@ class CardContainer extends Component {
           />
         </Card> */}
         <Text style={styles.title}>Powered by Tencent</Text>
-        <IconButton iconName="coupons" text="優惠券" onPress={this.handleCoupons} />
+        <View style={styles.iconContainer}>
+          <IconButton
+            iconName="balance"
+            text="賬戶餘額"
+            onPress={this.handleBalance}
+            iconImage={styles.iconImage}
+            iconText={styles.iconText}
+          />
+          <IconButton
+            iconName="balance"
+            text="賬戶餘額"
+            onPress={this.handleBalance}
+            iconImage={styles.iconImage}
+            iconText={styles.iconText}
+          />
+        </View>
       </View>
     );
   }

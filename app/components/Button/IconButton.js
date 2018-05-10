@@ -27,13 +27,23 @@ class IconButton extends Component {
       case 'send_money':
         filename = require('./images/send_money.png');
         break;
+      case 'coupons':
+        filename = require('./images/coupons.png');
+        break;
     }
 
     return (
       <TouchableOpacity style={styles.container} onPress={this.props.onPress}>
         <View style={styles.wrapper}>
-          <Image resizeMode="contain" style={styles.icon} source={filename} />
-          <Text style={styles.text}>{this.props.text}</Text>
+          <Image
+            resizeMode="contain"
+            // style={styles.icon}
+            style={this.props.iconImage ? this.props.iconImage : styles.icon}
+            source={filename}
+          />
+          <Text style={this.props.iconText ? this.props.iconText : styles.text}>
+            {this.props.text}
+          </Text>
         </View>
       </TouchableOpacity>
     );

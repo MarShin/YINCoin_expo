@@ -6,15 +6,29 @@ const containerHeight = Dimensions.get('window').height * 0.8;
 const styles = EStyleSheet.create({
   container: {
     flex: 8,
-    // alignItems: 'center',
-    // justifyContent: 'center',
     // height: 500,
     // marginTop: 400,
+  },
+  iconContainer: {
+    // justifyContent: 'space-around',
+    alignItems: 'flex-start',
+    flexDirection: 'row',
   },
   title: {
     paddingVertical: 10,
     paddingLeft: 10,
     backgroundColor: '$paleGray',
+  },
+  iconImage: {
+    width: 30,
+    height: 30,
+    marginBottom: 10,
+    tintColor: '$regularGreen',
+  },
+  iconText: {
+    color: '$darkBlue',
+    fontSize: 15,
+    fontWeight: '300',
   },
 });
 
