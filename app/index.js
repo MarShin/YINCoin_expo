@@ -19,9 +19,9 @@ EStyleSheet.build({
   $regularOrange: '#F5BC23',
   $lightOrange: '#FFCC2D',
   $darkGray: '#2C2C2C',
-  $regularGray: '#565656',
+  $regularGray: '#686F79',
   $lightGray: '#8C8C8C',
-  $paleGray: '#C0C0C0',
+  $paleGray: '#F0EFF5',
 
   $white: '#FFFFFF',
 
@@ -31,7 +31,6 @@ EStyleSheet.build({
 });
 
 // export default () => <Home />;
-// export default () => <Root />;
 
 export default () => (
   <Provider store={store}>

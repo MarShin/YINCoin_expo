@@ -11,6 +11,11 @@ const styles = EStyleSheet.create({
     // height: 500,
     // marginTop: 400,
   },
+  title: {
+    paddingVertical: 10,
+    paddingLeft: 10,
+    backgroundColor: '$paleGray',
+  },
 });
 
 export default styles;
