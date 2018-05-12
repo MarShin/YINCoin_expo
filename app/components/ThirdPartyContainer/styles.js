@@ -5,7 +5,7 @@ const containerHeight = Dimensions.get('window').height * 0.8;
 
 const styles = EStyleSheet.create({
   container: {
-    flex: 3,
+    flex: 5,
     // height: 500,
     // marginTop: 400,
   },

@@ -5,28 +5,28 @@ import styles from './styles';
 
 import { IconButton } from '../Button';
 
-class CardContainer extends Component {
+class ThirdPartyContainer extends Component {
   // constructor(props) {
   //   super(props);
   // }
 
-  handleCoupons = () => {
-    console.log('press coupons');
+  handleTransport = () => {
+    console.log('press transport');
   };
 
   render() {
-    const couponsImg = require('./images/coupons.png');
+    const transportImg = require('./images/transport.png');
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Powered by Tencent</Text>
+        <Text style={styles.title}>Powered by Third Party</Text>
         <View style={styles.iconContainer}>
           <IconButton
-            iconName="coupons"
-            text="優惠券"
-            onPress={this.handleCoupons}
+            iconName="transport"
+            text="交通"
+            onPress={this.handleTransport}
             iconImage={styles.iconImage}
             iconText={styles.iconText}
-            imageSource={couponsImg}
+            imageSource={transportImg}
           />
         </View>
       </View>
@@ -34,4 +34,4 @@ class CardContainer extends Component {
   }
 }
 
-export default CardContainer;
+export default ThirdPartyContainer;

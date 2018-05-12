@@ -1,7 +1,6 @@
 import { Dimensions } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
-// const bannerHeight = Dimensions.get('window').height * 0.2;
 const bannerWidth = Dimensions.get('window').width;
 
 const styles = EStyleSheet.create({
@@ -10,7 +9,7 @@ const styles = EStyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-around',
     width: bannerWidth,
-    backgroundColor: '$lightBlue',
+    backgroundColor: '$regularGray',
     flexDirection: 'row',
   },
   // text: {

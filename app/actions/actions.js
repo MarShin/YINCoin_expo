@@ -1,7 +1,7 @@
-// import fetch from "better-fetch";
+const URL = 'https://api-public.sandbox.gdax.com/';
+const SOCKET_URL = 'wss://ws-feed.gdax.com';
 
-const URL = 'https://api-public.sandbox.gdax.com/',
-  SOCKET_URL = 'wss://ws-feed.gdax.com';
+// redux-thunk return unamed function to store
 
 export const initData = () =>
   function (dispatch) {
@@ -20,8 +20,8 @@ export const connectSocket = () => {
 
   return function (dispatch, getState) {
     ws.onopen = () => {
-      const state = getState(),
-        product_ids = Object.keys(state.prices).map(k => state.prices[k].id);
+      const state = getState();
+      const product_ids = Object.keys(state.prices).map(k => state.prices[k].id);
 
       ws.send(JSON.stringify({
         type: 'subscribe',
