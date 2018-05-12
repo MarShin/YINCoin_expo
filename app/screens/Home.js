@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import { Container } from '../components/Container';
 import { TaskBanner } from '../components/TaskBanner';
 import { CardContainer } from '../components/CardContainer';
+import { ThirdPartyContainer } from '../components/ThirdPartyContainer';
 
 class Home extends Component {
   static propTypes = {
@@ -24,6 +25,7 @@ class Home extends Component {
         <KeyboardAvoidingView behavior="padding">
           <TaskBanner navigation={this.props.navigation} />
           <CardContainer />
+          <ThirdPartyContainer />
         </KeyboardAvoidingView>
       </Container>
     );

@@ -3,7 +3,6 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 export default EStyleSheet.create({
   container: {
     alignItems: 'center',
-    // paddingVertical: 20,
     padding: 20,
   },
   wrapper: {
@@ -19,7 +18,6 @@ export default EStyleSheet.create({
   text: {
     color: '$white',
     fontSize: 15,
-    // paddingVertical: 20,
     fontWeight: '300',
   },
 });

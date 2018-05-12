@@ -25,12 +25,36 @@ class TaskBanner extends Component {
   };
 
   render() {
+    const sendMoneyImg = require('./images/send_money.png');
+    const receiveMoneyImg = require('./images/receive_money.png');
+    const pricesImg = require('./images/prices.png');
+    const balanceImg = require('./images/balance.png');
     return (
       <View style={styles.container}>
-        <IconButton iconName="send_money" text="付錢" onPress={this.handleSendMoney} />
-        <IconButton iconName="receive_money" text="收錢" onPress={this.handleReceiveMoney} />
-        <IconButton iconName="prices" text="價格" onPress={this.handlePrices} />
-        <IconButton iconName="balance" text="賬戶餘額" onPress={this.handleBalance} />
+        <IconButton
+          iconName="send_money"
+          text="付錢"
+          onPress={this.handleSendMoney}
+          imageSource={sendMoneyImg}
+        />
+        <IconButton
+          iconName="receive_money"
+          text="收錢"
+          onPress={this.handleReceiveMoney}
+          imageSource={receiveMoneyImg}
+        />
+        <IconButton
+          iconName="prices"
+          text="價格"
+          onPress={this.handlePrices}
+          imageSource={pricesImg}
+        />
+        <IconButton
+          iconName="balance"
+          text="賬戶餘額"
+          onPress={this.handleBalance}
+          imageSource={balanceImg}
+        />
       </View>
     );
   }

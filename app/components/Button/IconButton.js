@@ -10,27 +10,7 @@ class IconButton extends Component {
   };
 
   render() {
-    let filename = null;
-    switch (this.props.iconName) {
-      default:
-        filename = require('./images/icon.png');
-        break;
-      case 'balance':
-        filename = require('./images/balance.png');
-        break;
-      case 'prices':
-        filename = require('./images/prices.png');
-        break;
-      case 'receive_money':
-        filename = require('./images/receive_money.png');
-        break;
-      case 'send_money':
-        filename = require('./images/send_money.png');
-        break;
-      case 'coupons':
-        filename = require('./images/coupons.png');
-        break;
-    }
+    const filename = require('./images/icon.png');
 
     return (
       <TouchableOpacity style={styles.container} onPress={this.props.onPress}>
@@ -39,7 +19,7 @@ class IconButton extends Component {
             resizeMode="contain"
             // style={styles.icon}
             style={this.props.iconImage ? this.props.iconImage : styles.icon}
-            source={filename}
+            source={this.props.imageSource ? this.props.imageSource : filename}
           />
           <Text style={this.props.iconText ? this.props.iconText : styles.text}>
             {this.props.text}
@@ -51,9 +31,12 @@ class IconButton extends Component {
 }
 
 IconButton.propTypes = {
-  iconName: PropTypes.string,
+  // iconName: PropTypes.string,
   text: PropTypes.string,
   onPress: PropTypes.func,
+  iconImage: PropTypes.number,
+  imageSource: PropTypes.number,
+  iconText: PropTypes.number,
 };
 
 export default IconButton;
