@@ -1,3 +1,16 @@
+## YINCoin Get Started
+1. Since we havn't 'eject' from Expo, install Expo IDE for Mac
+
+2. 
+```bash
+$ git clone project
+$ cd YINCoin
+$ yarn install //install packages & dependencies with Yarn
+```
+3. Open Expo app & import project with the current directory
+4. Start Expo Project & open up iOS simulator
+
+
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
 Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
